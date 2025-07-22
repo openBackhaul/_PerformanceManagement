@@ -4,6 +4,7 @@ UserDemand for MW SDN based Performance Management
 ### Scope  
 The current ComarchOSS based Performance Management is to be replaced by a set of microservices integrated into the application layer of the MW SDN domain.  
 
+#### Consuments
 The API Gateway will be the demarkation between the SDN domain and external applications/tools, which will be consuming the provided MW performance data.  
 Currently the following consumers are within the scope:  
 - [Netexplorer](./additional_description/Netexplorer.md)
@@ -12,3 +13,7 @@ Currently the following consumers are within the scope:
 
 Depending on the needs of the different consumers, different services for data provisioning can be exposed.  
 While devices only provide raw data, implementing (simple) aggregations or formulas would also be possible if needed.  
+
+#### Data gathering
+In the first step data will only be gathered in periodic intervals and be stored for a configured retention period.  
+In later iterations there can also be improvements for checking and ensuring data completeness.  
