@@ -1,19 +1,26 @@
 # _PerformanceManagement
-UserDemand for MW SDN based Performance Management
+UserDemand for an interface that is streaming MW Performance Data  
 
-### Scope  
-The current ComarchOSS based Performance Management is to be replaced by a set of microservices integrated into the application layer of the MW SDN domain.  
+### Driver  
+Replacement of ComarchOSS  
 
-#### Consuments
-The API Gateway will be the demarkation between the SDN domain and external applications/tools, which will be consuming the provided MW performance data.  
-Currently the following consumers are within the scope:  
-- [Netexplorer](./additional_description/Netexplorer.md)
-- [APT](./additional_description/APT.md)
-- [Mycom](./additional_description/Mycom.md)
+### In Scope
+- Interface (exposed at API GW) that is streaming (to be agreed with consumers) performance data to the following out-of-domain software:  
+  - [APT](./additional_description/APT.md)
+  - [Mycom](./additional_description/Mycom.md)
+  - [Netexplorer](./additional_description/Netexplorer.md)
+- The data  
+  - shall be collected with a high level of completeness  
+  - shall be harmonized in its format and its semantical meaning  
+  - relate to time periods that have been completed in past (historical performance values)  
+  - shall be filtered from obviously unrealistic values  
+- Activate the performance measurement function on the devices wherever required
+- Aggregate data and calculate key performance indicators (e.g., interval capacity) as far as they are harmonized across the consumers  
+- Complement with configuration and status data as far as can be harmonized across the consumers  
 
-Depending on the needs of the different consumers, different services for data provisioning can be exposed.  
-While devices only provide raw data, implementing (simple) aggregations or formulas would also be possible if needed.  
+### Out of Scope
+- Providing current performance and counter values  
+- Long term storage of performance data  
+- Graphical user interface for analyzing performance data  
+- Providing an interface for ad-hoc definition of aggregation methods and analysis metrics
 
-#### Data gathering
-In the first step data will only be gathered in periodic intervals and be stored for a configured retention period.  
-In later iterations there can also be improvements for checking and ensuring data completeness.  
