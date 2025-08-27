@@ -1,15 +1,21 @@
-# _PerformanceManagement
+# _PerformanceManagement  
 UserDemand for an interface that is streaming MW Performance Data  
 
 ### Driver  
 Replacement of ComarchOSS  
 
-### In Scope
+### In Scope  
+
 - Interface (exposed at API GW) that is streaming (to be agreed with consumers) performance data to the following out-of-domain software:  
-  - [APT](./additional_description/APT.md)
-  - [Mycom](./additional_description/Mycom.md)
-  - [Netexplorer](./additional_description/Netexplorer.md)
-- The data  
+  - [APT](./additional_description/APT.md)  
+  - [Netexplorer](./additional_description/Netexplorer.md)  
+  - [Mycom](./additional_description/Mycom.md) (to be clarified)  
+  - TechnologyDataLake (to be clarified)  
+
+- Functions to be provided by the PM Interface:  
+   The data:
+    - shall be collected from the devices and be forwarded to the consumers
+      
   - shall be collected with a high level of completeness  
   - shall be harmonized in its format and its semantical meaning  
   - relate to time periods that have been completed in past (historical performance values)  
