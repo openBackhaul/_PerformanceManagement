@@ -33,6 +33,8 @@ Replacement of ComarchOSS
   - Data shall be harmonized in its format and its semantical meaning  
   - Statistics about the completeness and quality of the PM data shall be provided  
   - Complement with configuration and status data as far as can be harmonized across the Consumers  
+  - KMO: one additional point for plausibility: maybe we should not only replace unplausible data, but also consider filtering out unneeded data altogether (e.g. supported modulations can be filtered out if code-rate = -1)
+
 
 ### Out of Scope
 - Providing current performance and counter values  
