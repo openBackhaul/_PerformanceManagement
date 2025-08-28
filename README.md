@@ -26,7 +26,7 @@ Replacement of ComarchOSS
   - Activation on the device:  
     - Measurement of PM data shall be autonomously activated on active traffic interfaces  
     - Measurement of PM data shall be autonomously de-activated on inactive traffic interfaces  
-  Aggregation:  
+  - Aggregation:  
     - Calculation of derived KPIs shall be supported (as far as they get used by the majority of Consumers)  
 
 - Further functions to be discussed:  
