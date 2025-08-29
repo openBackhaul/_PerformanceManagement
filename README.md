@@ -21,20 +21,27 @@ Replacement of ComarchOSS
   - On-demand upload of latest PM data of individual traffic interfaces shall be supported  
   - Plausibility:  
     - Uploaded PM data shall be checked for plausibility  
-    - Unplausible data shall be replaced according to generic rules  
+    - Unplausible data shall be replaced or deleted according to generic rules  
     - Documentation of these generic rules shall be made available to the users  
+  - Semantic:  
+    - The semantical meaning of data must be defined and documented  
+    - Documentation of this meaning shall be made available to the users  
+    - Data shall be harmonized in its format and its semantical meaning  
   - Activation on the device:  
     - Measurement of PM data shall be autonomously activated on active traffic interfaces  
     - Measurement of PM data shall be autonomously de-activated on inactive traffic interfaces  
+  - Capability:  
+    - Provide information about the individual traffic interface's capabilities for providing individual performance values  
+      (ONF default values and Capability information is used to determine the interface's capabilities)  
   - Aggregation:  
     - Calculation of derived KPIs shall be supported (as far as they get used by the majority of Consumers)  
+  - Completion:  
+    - Complement with configuration data as far as it can be harmonized across the Consumers  
+  - Service Quality Monitoring:  
+    - Statistics about the completeness and quality of the PM data shall be provided  
 
-- Further functions to be discussed:  
-  - Data shall be harmonized in its format and its semantical meaning  
-  - Statistics about the completeness and quality of the PM data shall be provided  
-  - Complement with configuration and status data as far as can be harmonized across the Consumers  
-  - KMO: one additional point for plausibility: maybe we should not only replace unplausible data, but also consider filtering out unneeded data altogether (e.g. supported modulations can be filtered out if code-rate = -1)
-
+### Future Work  
+- Semantical harmonization of PM data deformed by PowerSaving  
 
 ### Out of Scope
 - Providing current performance and counter values  
