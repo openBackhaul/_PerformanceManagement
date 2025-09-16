@@ -13,6 +13,7 @@ Replacement of ComarchOSS
   - TechnologyDataLake (to be clarified)  
 
 - Functions to be provided by the PM Interface:  
+  - Technology: AirInterface (microwave radio interface) and EthernetContainer (Layer 2) shall be covered
   - Regular uploading:  
     - The PM data shall be collected from all connected devices and be forwarded to the Consumers (see above list of out-of-domain software)  
     - In case of incompleteness, it shall be autonomously attempted to complete the data  
