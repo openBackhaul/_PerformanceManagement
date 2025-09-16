@@ -4,7 +4,7 @@ UserDemand for an interface that is streaming MW Performance Data
 ### Driver  
 Replacement of ComarchOSS  
 
-### Scope to be delivered in the first three consecutive iterations  
+### Scope to be delivered in the first three consecutive iterations (agreed 16th of September 2025)  
 
 - Interface (exposed at API GW) that is streaming (to be agreed with Consumers) performance data to the following out-of-domain software:  
   - [APT](./additional_description/APT.md)  
@@ -41,7 +41,7 @@ Replacement of ComarchOSS
   - Service Quality Monitoring:  
     - Statistics about the completeness and quality of the PM data shall be provided  
 
-### Scope to be delivered in a future fourth iteration  
+### Scope to be delivered in a future fourth iteration (agreed 16th of September 2025)  
 - Semantical harmonization of PM data deformed by PowerSaving  
 
 ### Out of Scope
