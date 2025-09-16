@@ -4,7 +4,7 @@ UserDemand for an interface that is streaming MW Performance Data
 ### Driver  
 Replacement of ComarchOSS  
 
-### In Scope  
+### Scope to be delivered in the first three consecutive iterations  
 
 - Interface (exposed at API GW) that is streaming (to be agreed with Consumers) performance data to the following out-of-domain software:  
   - [APT](./additional_description/APT.md)  
@@ -13,7 +13,7 @@ Replacement of ComarchOSS
   - TechnologyDataLake (to be clarified)  
 
 - Functions to be provided by the PM Interface:  
-  - Technology: AirInterface (microwave radio interface) and EthernetContainer (Layer 2) shall be covered
+  - AirInterface (microwave radio interface) and EthernetContainer (Layer 2) shall be covered  
   - Regular uploading:  
     - The PM data shall be collected from all connected devices and be forwarded to the Consumers (see above list of out-of-domain software)  
     - In case of incompleteness, it shall be autonomously attempted to complete the data  
@@ -41,7 +41,7 @@ Replacement of ComarchOSS
   - Service Quality Monitoring:  
     - Statistics about the completeness and quality of the PM data shall be provided  
 
-### Future Work  
+### Scope to be delivered in a future fourth iteration  
 - Semantical harmonization of PM data deformed by PowerSaving  
 
 ### Out of Scope
