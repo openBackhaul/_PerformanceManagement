@@ -22,7 +22,7 @@ Replacement of ComarchOSS
   - On-demand upload of latest PM data of individual traffic interfaces shall be supported  
   - Plausibility:  
     - Uploaded PM data shall be checked for plausibility  
-    - Unplausible data shall be replaced or deleted according to generic rules  
+    - Implausible data shall be replaced or deleted according to generic rules  
     - Documentation of these generic rules shall be made available to the users  
   - Semantic:  
     - The semantical meaning of data must be defined and documented  
