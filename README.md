@@ -4,8 +4,10 @@ UserDemand for an interface that is streaming MW Performance Data
 ### Driver  
 Replacement of ComarchOSS  
 
-### Scope to be delivered in the first three consecutive iterations (agreed 16th of September 2025)  
+### Scope  
+The following scope has been agreed with the representatives of the ToolStream on 16th of September 2025.  
 
+**First three consecutive iterations:**  
 - Interface (exposed at API GW) that is streaming (to be agreed with Consumers) performance data to the following out-of-domain software:  
   - [APT](./additional_description/APT.md)  
   - [Netexplorer](./additional_description/Netexplorer.md)  
@@ -41,11 +43,27 @@ Replacement of ComarchOSS
   - Service Quality Monitoring:  
     - Statistics about the completeness and quality of the PM data shall be provided  
 
-### Scope to be delivered in a future fourth iteration (agreed 16th of September 2025)  
+**Future fourth iteration:**  
 - Semantical harmonization of PM data deformed by PowerSaving  
 
-### Out of Scope
+**Out of Scope:**  
 - Providing current performance and counter values  
 - Long term storage of performance data  
 - Graphical user interfaces for analyzing performance data  
 - Providing an interface for ad-hoc definition or change of aggregation methods and analysis metrics  
+
+### Components  
+The following components are required for implementing the _PerformanceManagement UseCase.  
+
+**New Applications:**  
+- [DevicePerformanceManagementDataProcessor](https://github.com/openBackhaul/DevicePerformanceManagementDataProcessor)  
+- [LinkIdIntoLtpWriter](https://github.com/openBackhaul/LinkIdIntoLtpWriter)  
+- to be completed  
+
+**To be updated Applications:**  
+- [MicroWaveDeviceInventory](https://github.com/openBackhaul/MicroWaveDeviceInventory)  
+- to be completed  
+
+**Dependencies on on-going Implementations:**  
+- Kafka event streaming  
+- to be completed  
