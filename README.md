@@ -53,7 +53,7 @@ The following scope has been agreed with the representatives of the ToolStream o
 - Providing an interface for ad-hoc definition or change of aggregation methods and analysis metrics  
 
 ### Components  
-The following components are required for implementing the _PerformanceManagement UseCase.  
+The following components are required for implementing the _PerformanceManagement UserDemand.  
 
 **New Applications:**  
 - [DevicePerformanceManagementDataProcessor](https://github.com/openBackhaul/DevicePerformanceManagementDataProcessor)  
