@@ -13,11 +13,10 @@ The following scope has been agreed with the representatives of the ToolStream o
 
 **First three consecutive iterations:**  
 
-- Interface (exposed at API GW) that is streaming (to be agreed with Consumers) performance data to the following out-of-domain software:  
-  - [APT](./additional_description/APT.md)  
-  - [NetExplorer](./additional_description/Netexplorer.md)  
-  - [Mycom](./additional_description/Mycom.md) (to be clarified)  
-  - TechnologyDataLake (to be clarified)  
+- Interface that is streaming microwave performance data via official Kafka bus to the following out-of-domain tools:
+  - APT
+  - NetExplorer
+  - Mycom
 
 - Functions to be provided by the PM Interface:  
   - AirInterface (microwave radio interface) and EthernetContainer (Layer 2) shall be covered  
@@ -63,18 +62,14 @@ The following scope has been agreed with the representatives of the ToolStream o
 
 The following components are required for implementing the _PerformanceManagement UserDemand.  
 
-**New Applications:**  
+### New Applications
 
-- [DevicePerformanceManagementDataProcessor](https://github.com/openBackhaul/DevicePerformanceManagementDataProcessor)  
-- [LinkIdIntoLtpWriter](https://github.com/openBackhaul/LinkIdIntoLtpWriter)  
-- to be completed  
+- [DevicePerformanceManagementDataProcessor](https://github.com/openBackhaul/DevicePerformanceManagementDataProcessor)
 
-**To be updated Applications:**  
+### To be updated Applications
 
-- [MicroWaveDeviceInventory](https://github.com/openBackhaul/MicroWaveDeviceInventory)  
-- to be completed  
+- [MicroWaveDeviceInventory](https://github.com/openBackhaul/MicroWaveDeviceInventory)
 
-**Dependencies on on-going Implementations:**  
+### Dependencies
 
-- Kafka event streaming  
-- to be completed  
+- EMP (the company's Kafka event streaming platform)
